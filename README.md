@@ -1,16 +1,31 @@
-<div align="center">
-  <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200&h=400" alt="BuildThis.dev Banner" width="100%" />
+<p align="center">
+  <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1200" alt="BuildThis.dev Banner" width="100%" />
+</p>
 
-  # 🚀 BuildThis.dev
-  **Turn frustrations into foundations. The community-powered problem discovery engine.**
+# <p align="center">🚀 BuildThis.dev</p>
 
-  [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org)
-  [![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase)](https://supabase.com)
-  [![Ollama](https://img.shields.io/badge/AI-Ollama-blue?style=for-the-badge&logo=ollama)](https://ollama.com)
-  [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
+<p align="center">
+  <strong>Turn frustrations into foundations. The community-powered problem discovery platform.</strong>
+</p>
 
-  [Browse Problems](https://github.com/AmanSoni1-apex/BuildThis/blob/main/src/app/browse/page.tsx) • [Submit Idea](https://github.com/AmanSoni1-apex/BuildThis/blob/main/src/app/submit/page.tsx) • [Read the PRD](https://github.com/AmanSoni1-apex/BuildThis/blob/main/documents/02%20-%20Product%20Requirements.md)
-</div>
+<p align="center">
+  <a href="https://nextjs.org">
+    <img src="https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js" alt="Next.js" />
+  </a>
+  <a href="https://supabase.com">
+    <img src="https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase" alt="Supabase" />
+  </a>
+  <a href="https://ollama.com">
+    <img src="https://img.shields.io/badge/AI-Ollama-blue?style=for-the-badge&logo=ollama" alt="Ollama" />
+  </a>
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License" />
+</p>
+
+<p align="center">
+  <a href="./src/app/browse/page.tsx">Browse Problems</a> • 
+  <a href="./src/app/submit/page.tsx">Submit Idea</a> • 
+  <a href="./documents/02%20-%20Product%20Requirements.md">Read the PRD</a>
+</p>
 
 ---
 
