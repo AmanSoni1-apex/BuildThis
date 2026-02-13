@@ -22,8 +22,10 @@ export async function refineProblem(roughIdea: string): Promise<string> {
     // Hybrid AI Logic
     const geminiApiKey = process.env.GOOGLE_GENERATIVE_AI_API_KEY;
 
+    console.log("AI Service Debug: Checking for Gemini API Key...");
     // Use Gemini if API key is present (e.g., in Production)
     if (geminiApiKey) {
+        console.log("AI Service Debug: Gemini Key FOUND. Using Google Cloud AI.");
         try {
             const genAI = new GoogleGenerativeAI(geminiApiKey);
             const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
