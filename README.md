@@ -100,8 +100,6 @@ npm run dev
 
 Detailed insights into why and how we are building this:
 - [Technical Architecture](./documents/03%20-%20Technical%20Architecture.md)
-- [YC Strategy & Roadmap](./documents/08%20-%20YC%20Strategy%20Startup%20Roadmap.md)
-- [GTM & Social Strategy](./documents/09%20-%20Open%20Source%20Social%20Media%20Strategy.md)
 
 <div align="center">
   <sub>Built with ❤️ by Aman Soni & Antigravity.</sub>
