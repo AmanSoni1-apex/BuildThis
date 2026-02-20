@@ -96,11 +96,6 @@ npm run dev
 
 ---
 
-### 📄 Strategic Documentation
-
-Detailed insights into why and how we are building this:
-- [Technical Architecture](./documents/03%20-%20Technical%20Architecture.md)
-
 <div align="center">
-  <sub>Built with ❤️ by Aman Soni & Antigravity.</sub>
+  <sub>Built with ❤️ by Aman </sub>
 </div>
