@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException
-from SQLAlchemy.orm import Session
+from sqlalchemy.orm import Session
 from app.schemas.problem import ProblemCreate , Problem
 from app.services.ai_refiner import refine_problem
 from app.models.problem import Problem as ProblemModel
