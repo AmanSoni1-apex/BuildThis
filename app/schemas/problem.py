@@ -5,16 +5,15 @@ from typing import Optional # used this when a field is not required.
 
 class ProblemBase(BaseModel):
     #  Now this is the "Base Schema" it defines the common fields that will be used in multiple schemas.
-    title:str
     description:str
-    category:str
-
+    
 class ProblemCreate(ProblemBase): # This is what you expect from the user when they create a new problem .
     pass
 
 class Problem(ProblemBase):  # This is what you send back to the user or the response contain these fields 
     id:int
-    author_id:int
+    title:str
+    category:str
 
     class Config:
         orm_mode=True
