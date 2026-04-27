@@ -1,7 +1,7 @@
 # Data Validation Layer this defines what data comes in/out of API this define's what user sends/recieve
 
 from pydantic import BaseModel # Now this import is used to Validate and structure data coming in/out of API ,you can say this is "Used for API/data validation layer" .
-from typing import Optional # used this when a field is not required.
+from typing import Optional , Any # used this when a field is not required.
 
 class ProblemBase(BaseModel):
     #  Now this is the "Base Schema" it defines the common fields that will be used in multiple schemas.
@@ -14,6 +14,7 @@ class Problem(ProblemBase):  # This is what you send back to the user or the res
     id:int
     title:str
     category:str
+    architecture: Optional[Any] = None
 
     class Config:
         orm_mode=True
