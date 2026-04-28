@@ -16,7 +16,7 @@ api_key=os.getenv("OPENROUTER_API_KEY")
 
 # here we are making a llm object so that we can send the data to the llm for the further processing
 llm=ChatOpenAI(
-    model="google/gemini-2.0-flash-001",
+    model="nvidia/nemotron-3-super-120b-a12b:free",
     api_key=api_key,
     base_url="https://openrouter.ai/api/v1",
     temperature=0.7
@@ -43,4 +43,3 @@ async def refine_problem(messy_input:str):
         return result
     except Exception as e:
         raise e
-

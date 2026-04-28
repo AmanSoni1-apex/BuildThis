@@ -34,21 +34,22 @@ class Technical_Architecture(BaseModel):
     project_completion_time:str=Field(description="How much time it will take to build the complete project and from which point we should start building the mvp what component to build first whether its the frontend , backend.. and so on and also specify how to complete the mvp in the estimated time")
 
     technology_justification:str=Field(description="Here in this field, explain WHY you chose each specific technology over others")
-
+    
+    cost_estimate:str=Field(description="The estimated cost to build the entireapplication it should be in a way that the cost should be reasonable according to the technology stack and the features we are going to use in the application it should not be too high or too low and the estimated cost should be in dollars and also in INR format and also a detailed cost breakdown in both USD and INR. Explain the reasoning based on infrastructure (AWS/GCP) and API costs ")
 
 class Architecture_plan(BaseModel):
     app_name:str=Field(description="The name of the application it should be short and relatable to the problem , if it is related to food then the name app name should be related to food and if it is related to the health then the app name should be related to the health and so on..!")
 
     app_architecture:Technical_Architecture=Field(description="The architecture of the application")
     
-    # cost_estimate
     reasoning_for_tech_stack_and_features:str=Field(description="The reasoning behind the choice of the tech stack and the features ")
 
     data_flow_in_project:str=Field(description="How the data should flow in the enitre project it should be in a way that the data should flow from the frontend to the database and then from the database to the frontend or from the frontend to the backend and then to the database and then to the frontend or from the frontend to the backend and then to the database and then to the frontend and so on ")
 
 
 llm=ChatOpenAI(
-    model="google/gemini-2.0-flash-001",
+    # model="google/gemini-2.0-flash-001",
+    model="z-ai/glm-4.5-air:free",
     base_url="https://openrouter.ai/api/v1",
     temperature=0.9,
     api_key=api_key
@@ -69,7 +70,6 @@ prompt_template=ChatPromptTemplate.from_messages([
     {format_instructions} 
     '''
     ),
-
     ('human','Design an architecture for the following project:\n Project Title: {title} \n Project Description: {description} ')
 ])
 
