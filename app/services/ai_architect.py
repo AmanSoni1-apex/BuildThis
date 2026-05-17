@@ -10,7 +10,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 
 load_dotenv()
-api_key=os.getenv("OPENROUTER_API_KEY")
+api_key=os.getenv("GROQ_API_KEY")
 
 class Technical_Architecture(BaseModel):
     front_end:str=Field(description="The tech stack we are going to use for the frontend and also specify why we are only using this tech in the frontend and why not other ")
@@ -48,10 +48,9 @@ class Architecture_plan(BaseModel):
 
 
 llm=ChatOpenAI(
-    # model="google/gemini-2.0-flash-001",
-    model="z-ai/glm-4.5-air:free",
-    base_url="https://openrouter.ai/api/v1",
-    temperature=0.9,
+    model="llama-3.3-70b-versatile",
+    base_url="https://api.groq.com/openai/v1",
+    temperature=0.6,
     api_key=api_key
 )
 
@@ -66,7 +65,7 @@ prompt_template=ChatPromptTemplate.from_messages([
     4. CLOUD STRATEGY: Select a deployment platform that fits the project scale (e.g., Vercel/Railway for MVPs, AWS/GCP/Azure for Enterprise/Complex systems).
     5. TIMELINES: Be realistic. A complex AI system takes longer than a simple CRUD app.
     6. JSON ONLY: Return only valid JSON output.   
-
+    7. LEAN STARTUP ECONOMICS: For MVPs, prioritize cost-efficiency. Use free tiers of cloud services (Supabase, Vercel, AWS Free Tier). Realistic costs should be in the hundreds or low thousands, not hundreds of thousands.
     {format_instructions} 
     '''
     ),
